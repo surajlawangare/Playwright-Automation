@@ -17,24 +17,24 @@ test('Login with valid credential', async ({ page }) => {
 });
 
 
-// test('Login with invalid credentials', async ({ page }) => {
+test('Login with invalid credentials', async ({ page }) => {
 
-//     // navigate to the URL
-//     await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login');
-//     //enter the invalid username
-//     await page.getByRole('textbox', { name: 'username' }).fill('Wrong_User');
+    // navigate to the URL
+    await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login');
+    //enter the invalid username
+    await page.getByRole('textbox', { name: 'username' }).fill('Wrong_User');
 
-//     //enter the invalid password 
-//     await page.getByRole('textbox', { name: 'password' }).fill('Wrong_User');
+    //enter the invalid password 
+    await page.getByRole('textbox', { name: 'password' }).fill('Wrong_User');
 
-//     //click on login button
-//     await page.getByRole('button', { type: 'submit' }).click();
+    //click on login button
+    await page.getByRole('button', { type: 'submit' }).click();
 
-//     //verify error message
-//     const errorMessage = await page.getByText('Invalid credentials');
-//     await expect(errorMessage).toHaveText('Invalid credentials');
+    //verify error message
+    const errorMessage = await page.getByText('Invalid credentials');
+    await expect(errorMessage).toHaveText('Invalid credentials');
 
-// });
+});
 
 test('Click on Admin menu Verify System user panel is open', async ({ page }) => {
 
