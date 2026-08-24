@@ -1,0 +1,21 @@
+{
+    "customers": [
+        {
+            "firstName": "Suraj",
+            "lastName": "Lawangare",
+            "postalCode": "415501"
+        },
+
+        {
+           "firstName": "Pratik",
+           "lastName": "Jadhav",
+           "postalCode": "411001" 
+        },
+
+        {
+            "firstName": "Pranay",
+            "lastName": "Phalake",
+            "postalCode": "411005"
+        }
+    ]
+}
